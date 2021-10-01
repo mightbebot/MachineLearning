@@ -27,7 +27,7 @@ Using PyTorch 0.3 will break the detector.
 
 ## Detection Example
 
-![Detection Example](output-gif.gif)
+![Detection Example](output.mp4)
 ## Running the detector
 
 ### On single or multiple images
