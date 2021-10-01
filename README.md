@@ -58,12 +58,13 @@ python detect.py --images imgs --det det --reso 320
 ```
 
 ### On Video
-For this, you should run the file, video_demo.py with --video flag specifying the video file. The video file should be in .avi format
-since openCV only accepts OpenCV as the input format. 
+For this, you should run the file, video_demo.py with --video flag specifying the video file. The video file should be in .avi|.mp4|etc format
+that is supported by OpenCV, as that's the library used for reading frames. 
 
 ```
-python video_demo.py --video video.avi
+python video_demo.py --video video.mp4
 ```
+Sample `video.mp4` is provided, if no `args` are specified detection will run by default on `video.mp4`. See [video_demo.py](video_demo.py) 
 
 Tweakable settings can be seen with -h flag. 
 
@@ -81,6 +82,12 @@ feed will be taken from what the OpenCV, recognises as camera 0. The default ima
 python cam_demo.py
 ```
 You can easily tweak the code to use different weightsfiles, available at [yolo website](https://pjreddie.com/darknet/yolo/)
+The default settings will look for `yolov3.cfg` configuration file in `cfg` folder and correnponding `yolov3.weights` weights file in root folder. For more details see `args_parse()` function's default parameters when running any of the following detections:
+- [video_demo.py](video_demo.py)
+- [video_demo_half.py](video_demo_half.py)
+- [cam-demo.py](cam-demo.py)
+- [detect.py](detect.py)
+to see default weights and configuration settings. All default `.cfg` files are provided, `.weights` are not provided due to github file size limit cap, please download at [yolo website](https://pjreddie.com/darknet/yolo/)
 
 NOTE: The scales features has been disabled for better refactoring.
 ### Detection across different scales
