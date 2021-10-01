@@ -58,8 +58,8 @@ python detect.py --images imgs --det det --reso 320
 ```
 
 ### On Video
-For this, you should run the file, video_demo.py with --video flag specifying the video file. The video file should be in .avi format
-since openCV only accepts OpenCV as the input format. 
+For this, you should run the file, video_demo.py with --video flag specifying the video file. The video file should be in .avi|.mp4|etc format
+that is supported by OpenCV, as that's the library used for reading frames. 
 
 ```
 python video_demo.py --video video.avi
