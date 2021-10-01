@@ -62,8 +62,9 @@ For this, you should run the file, video_demo.py with --video flag specifying th
 that is supported by OpenCV, as that's the library used for reading frames. 
 
 ```
-python video_demo.py --video video.avi
+python video_demo.py --video video.mp4
 ```
+Sample `video.mp4` is provided, if no `args` are specified detection will run by default on `video.mp4`. See [video_demo.py](video_demo.py) 
 
 Tweakable settings can be seen with -h flag. 
 
