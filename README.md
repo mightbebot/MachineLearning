@@ -9,8 +9,7 @@ upon the original port by removing redundant parts of the code (The official cod
 library, and includes stuff like sequence models, which are not used in YOLO). I've also tried to keep the code minimal, and 
 document it as well as I can. 
 
-### Tutorial for building this detector from scratch
-If you want to understand how to implement this detector by yourself from scratch, then you can go through this very detailed 5-part tutorial series I wrote on Paperspace. Perfect for someone who wants to move from beginner to intermediate pytorch skills. 
+#### Please do check this tutorial I used for refrence
 
 [Implement YOLO v3 from scratch](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
 
